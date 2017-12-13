@@ -1,0 +1,21 @@
+{
+  "apps": [{
+    "name"  : "fcc",
+    "script": "npm",
+    "args": "start",
+    "env_production": {
+      NODE_ENV: "production",
+      PORT: 5167,
+    },
+  }],
+  "deploy": {
+    "production": {
+      "user"       : "pm2",
+      "host"       : "sigsev.io",
+      "ref"        : "origin/master",
+      "repo"       : "git@github.com:Apercu/fcc.git",
+      "path"       : "/var/www/fcc",
+      "post-deploy": "cd app && yarn && yarn build && pm2 startOrRestart ecosystem.json5 --env production --log-date-format 'DD-MM HH:mm:ss.SSS'",
+    }
+  }
+}
