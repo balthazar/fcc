@@ -7,7 +7,7 @@ export default ({ styles, state, html, main }) => `<!doctype html>
     <title>[::]</title>
 
     <meta charset="utf-8" />
-    ${__PROD__ ? '<base href="https://fcc.sigsev.io">' : ''}
+    ${__PROD__ ? '<base href="https://fcc.balthazar.dev">' : ''}
     <meta name="theme-color" content="#000000" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
