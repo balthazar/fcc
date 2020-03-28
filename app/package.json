@@ -42,7 +42,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
-    "eslint": "^4.9.0",
+    "eslint": "^4.18.2",
     "eslint-config-prettier": "^2.4.0",
     "eslint-config-zavatta": "^6.0.1",
     "eslint-config-zavatta-react": "^2.3.0",
