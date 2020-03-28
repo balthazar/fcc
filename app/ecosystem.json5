@@ -10,10 +10,10 @@
   }],
   "deploy": {
     "production": {
-      "user"       : "pm2",
-      "host"       : "sigsev.io",
+      "user"       : "me",
+      "host"       : "balthazar.dev",
       "ref"        : "origin/master",
-      "repo"       : "git@github.com:Apercu/fcc.git",
+      "repo"       : "git@github.com:balthazar/fcc.git",
       "path"       : "/var/www/fcc",
       "post-deploy": "cd app && yarn && yarn build && pm2 startOrRestart ecosystem.json5 --env production --log-date-format 'DD-MM HH:mm:ss.SSS'",
     }
